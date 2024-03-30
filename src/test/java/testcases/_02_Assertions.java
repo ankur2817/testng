@@ -1,5 +1,9 @@
 package testcases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,7 +14,7 @@ public class _02_Assertions {
 	String expectedTitle = "Sephora SEA";
 	String actualTitle = "Sephora USA";
 	
-	Assert.assertEquals(actualTitle, expectedTitle, "Test case failed as strings are not same");
+	AssertJUnit.assertEquals(actualTitle, expectedTitle, "Test case failed as strings are not same");
     }
     
     @Test

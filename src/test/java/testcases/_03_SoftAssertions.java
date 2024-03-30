@@ -1,5 +1,10 @@
 package testcases;
 
+import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -21,11 +26,11 @@ public class _03_SoftAssertions {
 	
 	SoftAssert objSoftAssert = new SoftAssert();
 	
-	objSoftAssert.assertEquals(actualTitle, expectedTitle, "Test case failed as titles are not same");
+	AssertJUnit.assertEquals(actualTitle, expectedTitle, "Test case failed as titles are not same");
 	
 	System.out.println("Printing after first softAssertion");
 	
-	objSoftAssert.assertEquals(true, false, "Test case failed true is not false");
+	Assert.assertEquals(true, false, "Test case failed true is not false");
 	
 	System.out.println("Printing after second softAssertion");
 	

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Functional Suite">
+	<groups>
+		<run>
+			<include name="sanity"></include>		
+		</run>
+	</groups>
+	
+  <test thread-count="5" name="Regression Test">
+    <classes>
+      <class name="testcases._01_BasicAnnotations"/>
+      <class name="testcases._02_Assertions"/>
+      <class name="testcases._03_SoftAssertions"/>
+      <class name="testcases._04_TestDependency"/>
+      <class name="testcases._05_Groups"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Sanity Test">
+    <classes>
+      <class name="testcases._01_BasicAnnotations"/>
+      <class name="testcases._02_Assertions"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Smoke Test">
+    <classes>
+      <class name="testcases._03_SoftAssertions"/>
+      <class name="testcases._04_TestDependency"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
