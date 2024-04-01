@@ -9,7 +9,7 @@ public class _07_TestParameterization_DataProvider {
     
     public static ExcelReader excel = null;
     
-    //@Test(dataProvider="getData")
+    @Test(dataProvider="getData")
     public void login(String username, String password) {
 	System.out.println("username is " + username + " and password is " + password);
 	
